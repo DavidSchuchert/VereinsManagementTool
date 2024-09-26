@@ -10,9 +10,15 @@ src/config/setup.lock
 uploads/member/*
 uploads/bills/*
 
+# Allow .gitignore files in those directories
+!uploads/member/.gitignore
+!uploads/bills/.gitignore
+
 # Ignoring all files in public/images but keeping the directory
 public/images/*
 
-# Ignoring Composer files (not recommended in most cases)
-composer.json
-composer.lock
+# Allow .gitignore file in public/images
+!public/images/.gitignore
+
+# Ignoring Composer vendor directory
+vendor/
