@@ -1,0 +1,134 @@
+/* General styling for input fields */
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form input[type="email"],
+form input[type="file"],
+form input[type="submit"],
+._setup form input[type="text"],
+._setup form input[type="password"],
+._setup form input[type="file"],
+select,
+input[type="datetime-local"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus,
+form input[type="file"]:focus,
+select:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+._setup form input[type="text"]:focus,
+._setup form input[type="password"]:focus,
+._setup form input[type="file"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form input[type="submit"],
+._setup form input[type="submit"] {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+._setup form input[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+input[required]:invalid,
+select[required]:invalid option[required]:invalid {
+  border-color: orange;
+}
+
+input:disabled {
+  background-color: darkgray !important;
+}
+
+/* Inventory specific styling */
+.inventory_search_input {
+  width: 80% !important;
+  margin-bottom: 0 !important;
+}
+
+/* Inventory Search */
+.inventory_search {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* File upload styling */
+._setup form .form-group input[type="file"] {
+  display: block;
+  padding: 5px;
+}
+
+._setup form .form-group input[type="file"]:before {
+  content: "Datei auswählen...";
+  display: block;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+._setup form .form-group input[type="file"]:hover::before,
+._setup form .form-group input[type="file"]:focus::before {
+  background-color: #fff;
+  border-color: #4a90e2;
+}
+
+._setup form .form-group input[type="file"]:active::before {
+  background-color: #357abd;
+  color: #fff;
+}
+
+/* Specific input fields */
+input[type="email"] {
+  padding: 10px;
+  font-size: 14px;
+}
+
+input[type="email"]:hover {
+  border-color: #aaa;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Select and date fields in table cells */
+table td select,
+table td input[type="datetime-local"],
+table td input[type="date"] {
+  padding: 8px;
+  font-size: 14px;
+  background-color: #f4f4f9;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}

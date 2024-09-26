@@ -1,0 +1,18 @@
+# Ignoring IDE-specific and editor-specific files
+.idea/
+.VSCodeCounter/
+
+# Ignoring specific configuration files
+src/config/config.db.php
+src/config/setup.lock
+
+# Ignoring files in uploads/member and uploads/bills but keeping the directories
+uploads/member/*
+uploads/bills/*
+
+# Ignoring all files in public/images but keeping the directory
+public/images/*
+
+# Ignoring Composer files (not recommended in most cases)
+composer.json
+composer.lock

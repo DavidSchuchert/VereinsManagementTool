@@ -1,0 +1,35 @@
+.accordion_summary {
+  background-color: #673ab7;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 16px;
+  font-weight: bold;
+}
+
+details[open] {
+    background-color: #9575cd;
+    border-radius: 8px;
+  }
+
+.members_accordion {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.accordion_data{
+    background-color: #9575cd;
+    color: white;
+    padding: 16px;
+    border-radius: 0 0 8px 8px;
+}
+
+.accordion_href{
+    color:white;
+    font-weight: normal;
+    text-decoration: underline;
+}

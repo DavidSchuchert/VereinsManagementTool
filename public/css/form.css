@@ -1,0 +1,87 @@
+/* Common form styles */
+form {
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 200px;
+    box-sizing: border-box;
+  }
+  
+  /* Specific form styles */
+  form {
+    background-color: #ffffff;
+  }
+  
+  ._setup form {
+    background-color: white;
+    border: 1px solid #3f3f3f;
+    color: #ffffff;
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+  }
+  
+  ._setup .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  ._setup form label {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /* Inventory form styles */
+  .inventory_actions_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .extra_info_text {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .extra_info_inventory{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  extra_info_user{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /* Form labels */
+  form label {
+    color: #333;
+  }
+  
+  ._setup form label {
+    color: #b39ddb;
+  }
+  
+
+  @media(max-width: 670px){
+    form {
+      max-width: 100%;
+    }
+  }

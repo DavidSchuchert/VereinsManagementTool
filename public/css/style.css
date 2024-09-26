@@ -1,0 +1,76 @@
+/* Allgemeine Einstellungen */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#upper_db {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.file_upload {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 8px;
+  gap: 0px;
+}
+
+/* Chart-Container */
+.chart-container {
+  width: 400px;
+  height: 300px;
+}
+
+#charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* Erfolgsnachricht */
+.succ_msg {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 15px;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  width: 100%;
+  transition: ease-in 0.5s;
+}
+
+
+
+/* Responsive */
+
+@media(max-width: 1177px){
+  #charts {
+    flex-direction: column;
+  }
+}
+@media(max-width: 540px){
+  #charts {
+    margin-top: 200px;
+    margin-bottom: 36px;
+  }
+}

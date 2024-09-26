@@ -1,0 +1,47 @@
+/* Allgemeine Einstellungen für Setup-Seite */
+body._setup {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+._setup .container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-top: 0;
+}
+
+
+/* Erfolgsnachricht */
+._setup .succ_msg {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+._setup a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+._setup a:hover {
+    text-decoration: underline;
+}
