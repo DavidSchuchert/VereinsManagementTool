@@ -53,7 +53,7 @@ if (!$form_submitted) {
             } elseif ($header == 'Rang') {
                 echo "<label for='$header'>$header*:</label>";
                 echo "<select name='$header' id='$header' required>
-                    <option value='Gründungsmitglied' " . ($value == 'Gründungsmitglied' ? 'selected' : '') . ">Gründungsmitglied</option>
+                    <option value='Gruendungsmitglied' " . ($value == 'Gruendungsmitglied' ? 'selected' : '') . ">Gruendungsmitglied</option>
                     <option value='Supportmitglied' " . ($value == 'Supportmitglied' ? 'selected' : '') . ">Supportmitglied</option>
                     <option value='Ordentlichesmitglied' " . ($value == 'Ordentlichesmitglied' ? 'selected' : '') . ">Ordentliches Mitglied</option>
                     <option value='sonstiges' " . ($value == 'sonstiges' ? 'selected' : '') . ">Sonstiges</option>
